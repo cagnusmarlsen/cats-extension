@@ -74,6 +74,7 @@ function listenForClicks() {
     }
 
     if ((event.target as HTMLElement).id === "cats") {
+      console.log("first")
       browser.tabs
         .query({ active: true, currentWindow: true })
         .then(addPetImage);

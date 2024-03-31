@@ -1,6 +1,7 @@
 export default defineContentScript({
   matches: ["*://*.google.com/*"],
   main() {
+    console.log("Hello content!"); 
     if ((window as any).hasRun) {
       return;
     }
